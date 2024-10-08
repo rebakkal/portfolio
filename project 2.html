@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <title>Bootstrap 5 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<style>
+    .divider {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .divider::before,
+    .divider::after {
+        flex: 1;
+        content: '';
+        padding: 4px;
+        background-color:  #94d2bd;
+        margin: 2px;
+    }
+
+    .back {
+        background-color:  #0a9396;
+    }
+
+        {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: #0d3b66;
+        color: white;
+        transform: rotateY(180deg);
+    }
+</style>
+
+<body>
+    <div class="container-fluid p-3 back mt-3">
+        <div class="row ">
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-3 text-white">
+                <h3>Magdhalin Rebakkal</h3>
+
+            </div>
+
+            <div class="col-sm-7">
+                <nav class="navbar navbar-expand-sm  justify-content-end">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="home.html"><b>HOME</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about1.html"><b>ABOUT</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="education.html"><b>EDUCATION</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="experiance.html"><b>EXPERIENCE</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="project 2.html"><b>PROJECTS</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="skill.html"><b>SKILLS</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="resume.pdf" target="_blank"><b>RESUME</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html"><b>CONTACT</b></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-1">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-3">
+        <div class="divider">PROJECTS</div>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="credit.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>CREDIT CARD FRAUD DETECTION</h5>
+                            <p>
+                                Credit card fraud detection is vital for protecting financial institutions and consumers from significant financial losses and reputational damage. Traditional rule-based systems often fall short against sophisticated fraud techniques.   </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="air.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back p-4">
+                            <h4>Air Quality Prediction</h4>
+                            <p>Air pollution, driven by industrialization and urbanization, is a major concern in cities like Tirunelveli, with pollutants like CO, NO, and C6H6 affecting air quality. Meteorological factors such as wind speed, direction, and humidity significantly influence the concentration of these pollutants. 
+              
+                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="online2.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back p-2">
+                            <h3>Online Course Registration</h3>
+                            <p>Online course registration systems allow students to select courses and giving student to access course offerings through these on-line systems as well as the ability to complete various administrative functions allows for better management of curriculum decisions in the context of academic objectives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>    
+    </div>
+</body>
+
+</html>
